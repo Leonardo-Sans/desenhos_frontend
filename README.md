@@ -7,7 +7,7 @@ Arquivos:
 - index.html
 - styles.css
 - script.js
-- Parte Teórica: Parte_Teorica_FMA_Leonardo_UniFECAF.pdf
+- Parte Teórica: Leonardo - UniFECAF.pdf
 
 Como testar:
 1. Abra index.html no navegador.

@@ -1,0 +1,55 @@
+:root{
+  --bg:#0b0b0b;
+  --card:#111;
+  --accent:#b22222;
+  --muted:#bdbdbd;
+  --max:1100px;
+  --radius:10px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;font-family:Inter, system-ui, Arial, sans-serif}
+body{background:var(--bg);color:var(--muted);line-height:1.5}
+.container{max-width:var(--max);margin:0 auto;padding:20px}
+
+/* header */
+.site-header{background:linear-gradient(90deg,#2b0707,#0b0b0b);color:#fff;padding:16px 0;position:sticky;top:0;z-index:40;height: 10vh}
+.header-inner{display:flex;justify-content:space-between;align-items:center}
+.brand .logo{font-weight:700;color:var(--accent);font-size:18px}
+.brand .tag{font-size:12px;color:#ccc}
+.nav a{color:#ddd;margin-left:16px;text-decoration:none;font-weight:600}
+
+/* banner */
+.banner{position:relative;overflow:hidden;height: 45vh}
+.banner-img{width:100%;height:320px;object-fit:cover;filter:grayscale(15%) contrast(90%);height: 45vh}
+.banner-overlay{position:absolute;left:24px;bottom:28px;color:#fff}
+.banner-overlay h1{font-size:32px;color:var(--accent);margin-bottom:6px}
+.banner-overlay p{color:#eee}
+
+/* sections */
+.sobre{padding:28px 0;border-bottom:1px solid rgba(255,255,255,0.03)}
+.sobre h2{color:var(--accent);margin-bottom:8px}
+.personagens{padding:28px 0}
+.controls{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.controls input{padding:8px;border-radius:8px;border:none;min-width:200px}
+.controls button{padding:8px 10px;border-radius:8px;border:none;background:var(--accent);color:#fff;cursor:pointer}
+
+/* cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:10px;padding:12px;box-shadow:0 10px 30px rgba(0,0,0,0.6);text-align:center}
+.card img{width:140px;height:140px;object-fit:cover;border-radius:8px;margin-bottom:10px;border:2px solid rgba(178,34,34,0.2)}
+.card h3{color:var(--accent);margin-bottom:6px}
+.meta{font-size:13px;color:#ccc;margin-bottom:8px}
+
+/* pagination */
+.pagination{display:flex;gap:8px;justify-content:center;margin-top:16px}
+.pagination button{padding:8px 12px;border-radius:8px;border:none;background:#222;color:#fff;cursor:pointer}
+
+/* footer */
+.site-footer{background:#070707;color:#999;padding:14px 0;text-align:center;margin-top:24px}
+
+/* responsive */
+@media (max-width:760px){
+  .banner-img{height:200px}
+  .banner-overlay h1{font-size:22px}
+  .cards{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+}

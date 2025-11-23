@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fullmetal Alchemist: Brotherhood - Personagens</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">Fullmetal Alchemist: Brotherhood</div>
+        <div class="tag">Leonardo dos santos da silva — UniFECAF</div>
+      </div>
+      <nav class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#personagens">Personagens</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="banner">
+    <img src="images/banner.png" alt="Banner FMA Brotherhood" class="banner-img">
+    <div class="banner-overlay">
+      <p>Personagens principais — Dados via Jikan API (MyAnimeList)</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="sobre" class="sobre">
+      <h2>Sobre</h2>
+      <p>Fullmetal Alchemist: Brotherhood (2009) é uma adaptação fiel do mangá de Hiromu Arakawa.</p>
+    </section>
+
+    <section id="personagens" class="personagens">
+      <h2>Personagens</h2>
+      <div class="controls">
+        <input id="search" placeholder="Buscar personagem (ex: Edward)" />
+        <button id="btnSearch">Buscar</button>
+        <button id="btnReload">Recarregar</button>
+      </div>
+      <div id="cards" class="cards"></div>
+      <div class="pagination">
+        <button id="prev">Anterior</button>
+        <span id="pageInfo"></span>
+        <button id="next">Próxima</button>
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <h2>Contato</h2>
+      <p>Aluno: Leonardo dos santos da silva — Curso: Análise e Desenvolvimento de Sistemas — UniFECAF</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© UniFECAF — Trabalho disciplina Web Programming for Front End</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
